@@ -360,7 +360,7 @@ public class ShapeRipple extends View {
 
         // the ripple radius based on the x or y
         maxRippleRadius = rippleMaximumRadius != NO_VALUE ? (int) rippleMaximumRadius :
-                (Math.min(viewWidth, viewHeight) / 2 - (rippleStrokeWidth / 2));
+                (Math.max(viewWidth, viewHeight) / 2 - (rippleStrokeWidth / 2));
 
         // Calculate the max number of ripples
         rippleCount = rippleCount > NO_VALUE ? rippleCount : maxRippleRadius / rippleStrokeWidth;
