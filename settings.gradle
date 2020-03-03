@@ -1,0 +1,3 @@
+rootProject.name='ripple'
+include ':Library'
+include ':Sample'
